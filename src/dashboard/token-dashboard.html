@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZOO Token Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .wallet-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .wallet-connected {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .wallet-address {
+            font-family: monospace;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            flex: 1;
+            word-break: break-all;
+        }
+        
+        .btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+        
+        .btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        
+        .btn-danger {
+            background: #e74c3c;
+        }
+        
+        .btn-danger:hover {
+            background: #c0392b;
+        }
+        
+        .stake-section {
+            margin-bottom: 30px;
+        }
+        
+        .stake-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .tier-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+        
+        .tier-0 { background: #e0e0e0; color: #666; }
+        .tier-1 { background: #fff3cd; color: #856404; }
+        .tier-2 { background: #d1ecf1; color: #0c5460; }
+        .tier-3 { background: #d4edda; color: #155724; }
+        
+        .input-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: 600;
+        }
+        
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        
+        input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .status {
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .status.warning {
+            background: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeaa7;
+        }
+        
+        .perks-list {
+            list-style: none;
+            margin-top: 10px;
+        }
+        
+        .perks-list li {
+            padding: 5px 0;
+            color: #666;
+        }
+        
+        .perks-list li:before {
+            content: "✓ ";
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        .lock-period {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🦁 ZOO Token Dashboard</h1>
+        <p class="subtitle">Stake your tokens to unlock exclusive access</p>
+        
+        <!-- Wallet Connection -->
+        <div class="wallet-section">
+            <h3>Wallet Connection</h3>
+            <div id="wallet-status">
+                <p>Connect your wallet to get started</p>
+                <button class="btn" onclick="connectWallet()">Connect Wallet</button>
+            </div>
+        </div>
+        
+        <!-- Staking Info -->
+        <div class="stake-section" id="stake-section" style="display: none;">
+            <div class="stake-info" id="stake-info">
+                <h3>Your Staking Status</h3>
+                <p>Loading...</p>
+            </div>
+            
+            <!-- Stake Form -->
+            <div class="stake-section">
+                <h3>Stake Tokens</h3>
+                <div class="input-group">
+                    <label>Amount (ZOO)</label>
+                    <input type="number" id="stake-amount" placeholder="500" min="0" step="1">
+                </div>
+                <button class="btn" onclick="stakeTokens()">Stake Tokens</button>
+            </div>
+            
+            <!-- Unstake -->
+            <div class="stake-section" id="unstake-section" style="display: none;">
+                <h3>Unstake Tokens</h3>
+                <p id="unstake-info"></p>
+                <button class="btn btn-danger" onclick="requestUnstake()" id="request-unstake-btn">Request Unstake</button>
+                <button class="btn btn-danger" onclick="completeUnstake()" id="complete-unstake-btn" style="display: none;">Complete Unstake</button>
+            </div>
+        </div>
+        
+        <!-- Status Messages -->
+        <div id="status-message"></div>
+    </div>
+    
+    <script>
+        // Wallet connection (using Phantom or other Solana wallet)
+        async function connectWallet() {
+            if (typeof window.solana === 'undefined') {
+                showStatus('Please install Phantom wallet', 'error');
+                return;
+            }
+            
+            try {
+                const resp = await window.solana.connect();
+                const walletAddress = resp.publicKey.toString();
+                
+                document.getElementById('wallet-status').innerHTML = `
+                    <div class="wallet-connected">
+                        <div class="wallet-address">${walletAddress}</div>
+                        <button class="btn" onclick="disconnectWallet()">Disconnect</button>
+                    </div>
+                `;
+                
+                window.walletAddress = walletAddress;
+                loadStakeInfo();
+            } catch (err) {
+                showStatus('Failed to connect wallet', 'error');
+            }
+        }
+        
+        function disconnectWallet() {
+            window.solana.disconnect();
+            window.walletAddress = null;
+            document.getElementById('wallet-status').innerHTML = `
+                <p>Connect your wallet to get started</p>
+                <button class="btn" onclick="connectWallet()">Connect Wallet</button>
+            `;
+            document.getElementById('stake-section').style.display = 'none';
+        }
+        
+        // Load stake info
+        async function loadStakeInfo() {
+            if (!window.walletAddress) return;
+            
+            try {
+                const response = await fetch(`/api/staking/status?user_address=${window.walletAddress}`);
+                const data = await response.json();
+                
+                if (data.success) {
+                    displayStakeInfo(data.status);
+                    document.getElementById('stake-section').style.display = 'block';
+                }
+            } catch (error) {
+                console.error('Error loading stake info:', error);
+            }
+        }
+        
+        function displayStakeInfo(status) {
+            const tierNames = ['No Access', 'Base Access', 'Full Access', 'Premium Access'];
+            const tierColors = ['tier-0', 'tier-1', 'tier-2', 'tier-3'];
+            
+            let html = `
+                <h3>Your Staking Status</h3>
+                <p>
+                    <strong>Staked:</strong> ${status.stakedAmount} ZOO tokens
+                    <span class="tier-badge ${tierColors[status.tier]}">Tier ${status.tier}: ${tierNames[status.tier]}</span>
+                </p>
+            `;
+            
+            if (status.accessRevoked) {
+                html += `<div class="status warning">
+                    <strong>⚠️ Access Revoked</strong><br>
+                    You have requested unstake. Access is revoked immediately.
+                    ${status.unlockTimestamp ? `Tokens unlock in ${Math.ceil((status.unlockTimestamp - Date.now()/1000) / 3600)} hours` : ''}
+                </div>`;
+            }
+            
+            if (status.tier > 0) {
+                html += `<ul class="perks-list">`;
+                const tierInfo = {
+                    1: ['Basic discounts (5%)', 'Limited product visibility'],
+                    2: ['Full product visibility', 'Standard discounts (10%)', 'Checkout enabled'],
+                    3: ['Premium discounts (20%)', 'Exclusive products', 'Priority support']
+                };
+                
+                (tierInfo[status.tier] || []).forEach(perk => {
+                    html += `<li>${perk}</li>`;
+                });
+                html += `</ul>`;
+            }
+            
+            document.getElementById('stake-info').innerHTML = html;
+            
+            // Show unstake section if staking
+            if (status.isStaking) {
+                document.getElementById('unstake-section').style.display = 'block';
+                
+                if (status.accessRevoked && status.unlockTimestamp) {
+                    document.getElementById('request-unstake-btn').style.display = 'none';
+                    document.getElementById('complete-unstake-btn').style.display = 'block';
+                    document.getElementById('unstake-info').innerHTML = `
+                        <div class="lock-period">
+                            <strong>2-Day Lock Period</strong><br>
+                            Tokens unlock: ${new Date(status.unlockTimestamp * 1000).toLocaleString()}
+                        </div>
+                    `;
+                } else {
+                    document.getElementById('request-unstake-btn').style.display = 'block';
+                    document.getElementById('complete-unstake-btn').style.display = 'none';
+                    document.getElementById('unstake-info').innerHTML = `
+                        <p>Request unstake to start 2-day lock period. Access will be revoked immediately.</p>
+                    `;
+                }
+            } else {
+                document.getElementById('unstake-section').style.display = 'none';
+            }
+        }
+        
+        // Stake tokens
+        async function stakeTokens() {
+            const amount = parseFloat(document.getElementById('stake-amount').value);
+            
+            if (!amount || amount <= 0) {
+                showStatus('Please enter a valid amount', 'error');
+                return;
+            }
+            
+            if (!window.walletAddress) {
+                showStatus('Please connect your wallet first', 'error');
+                return;
+            }
+            
+            try {
+                showStatus('Staking tokens...', 'warning');
+                
+                // Call backend API to stake
+                const response = await fetch('/api/staking/stake', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        user_address: window.walletAddress,
+                        amount: amount,
+                    }),
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    showStatus(`Successfully staked ${amount} ZOO tokens!`, 'success');
+                    document.getElementById('stake-amount').value = '';
+                    setTimeout(loadStakeInfo, 2000);
+                } else {
+                    showStatus(data.error || 'Failed to stake', 'error');
+                }
+            } catch (error) {
+                showStatus('Error staking tokens', 'error');
+            }
+        }
+        
+        // Request unstake
+        async function requestUnstake() {
+            if (!window.walletAddress) {
+                showStatus('Please connect your wallet first', 'error');
+                return;
+            }
+            
+            if (!confirm('Are you sure? Access will be revoked immediately and tokens will be locked for 2 days.')) {
+                return;
+            }
+            
+            try {
+                showStatus('Requesting unstake...', 'warning');
+                
+                const response = await fetch('/api/staking/request-unstake', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        user_address: window.walletAddress,
+                    }),
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    showStatus('Unstake requested. Access revoked. Tokens unlock in 2 days.', 'warning');
+                    setTimeout(loadStakeInfo, 2000);
+                } else {
+                    showStatus(data.error || 'Failed to request unstake', 'error');
+                }
+            } catch (error) {
+                showStatus('Error requesting unstake', 'error');
+            }
+        }
+        
+        // Complete unstake
+        async function completeUnstake() {
+            if (!window.walletAddress) {
+                showStatus('Please connect your wallet first', 'error');
+                return;
+            }
+            
+            try {
+                showStatus('Completing unstake...', 'warning');
+                
+                const response = await fetch('/api/staking/complete-unstake', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        user_address: window.walletAddress,
+                    }),
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    showStatus('Unstake completed! Tokens returned.', 'success');
+                    setTimeout(loadStakeInfo, 2000);
+                } else {
+                    showStatus(data.error || 'Failed to complete unstake', 'error');
+                }
+            } catch (error) {
+                showStatus('Error completing unstake', 'error');
+            }
+        }
+        
+        function showStatus(message, type) {
+            const statusDiv = document.getElementById('status-message');
+            statusDiv.className = `status ${type}`;
+            statusDiv.textContent = message;
+            statusDiv.style.display = 'block';
+            
+            setTimeout(() => {
+                statusDiv.style.display = 'none';
+            }, 5000);
+        }
+        
+        // Auto-connect if already connected
+        if (window.solana && window.solana.isConnected) {
+            window.solana.connect().then(resp => {
+                window.walletAddress = resp.publicKey.toString();
+                connectWallet();
+            });
+        }
+    </script>
+</body>
+</html>
+
+

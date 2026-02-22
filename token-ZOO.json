@@ -1,0 +1,14 @@
+{
+  "name": "Lions in the zoo",
+  "symbol": "ZOO",
+  "description": "Lions in the zoo token on Solana",
+  "image": "https://indigo-left-hummingbird-600.mypinata.cloud/ipfs/bafkreibroz7zzkl3j7muiqv5kxpxmzprpny75l3kmyobf4byez622sreym",
+  "decimals": 9,
+  "supply": "1000000",
+  "network": "devnet",
+  "mint": "FKkgeZxYLxoZ1WciErXKbeNTf5CB296zv51euCR7MZN3",
+  "tokenAccount": "AVJqhvECgwFkMQbmmTinbf4DxPco6fhzWEpzWyGi53xa",
+  "wallet": "6XPtpWPgFfoxRcLCwxTKXawrvzeYjviw4EYpSSLW42gc",
+  "explorer": "https://explorer.solana.com/address/FKkgeZxYLxoZ1WciErXKbeNTf5CB296zv51euCR7MZN3?cluster=devnet",
+  "createdAt": "2026-01-05T03:10:07.955Z"
+}

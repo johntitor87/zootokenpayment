@@ -1,0 +1,13 @@
+# Render.com – Staking API (fulcanellie)
+# When you connect this repo to Render as a Web Service, it will use these settings.
+# You can still override them in the Render dashboard if needed.
+
+services:
+  - type: web
+    name: fulcanellie-staking-api
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm run staking-api
+    envVars:
+      - key: NODE_VERSION
+        value: 20

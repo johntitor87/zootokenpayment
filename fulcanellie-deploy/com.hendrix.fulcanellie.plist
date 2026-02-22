@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Basic service information -->
+    <key>Label</key>
+    <string>com.hendrix.fulcanellie</string>
+    <key>Description</key>
+    <string>Fulcanellie Character Persistent System Service</string>
+    
+    <!-- Program to run with absolute path -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/hendrix/eliza-starter/fulcanellie/run_fulcanellie_service.sh</string>
+    </array>
+    
+    <!-- Working directory -->
+    <key>WorkingDirectory</key>
+    <string>/Users/hendrix/eliza-starter/fulcanellie</string>
+    
+    <!-- Environment setup -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/bin</string>
+        <key>LANG</key>
+        <string>en_US.UTF-8</string>
+        <key>PYTHONIOENCODING</key>
+        <string>UTF-8</string>
+    </dict>
+    
+    <!-- Standard output and error logs -->
+    <key>StandardOutPath</key>
+    <string>/Users/hendrix/eliza-starter/fulcanellie/logs/daemon_stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/hendrix/eliza-starter/fulcanellie/logs/daemon_stderr.log</string>
+    
+    <!-- Auto-launch configuration -->
+    <key>RunAtLoad</key>
+    <true/>
+    
+    <!-- Keep alive and auto-restart settings -->
+    <key>KeepAlive</key>
+    <dict>
+        <key>SuccessfulExit</key>
+        <false/>
+        <key>Crashed</key>
+        <true/>
+        <key>NetworkState</key>
+        <true/>
+    </dict>
+    
+    <!-- Prevent throttling -->
+    <key>ThrottleInterval</key>
+    <integer>0</integer>
+    
+    <!-- Process specific settings -->
+    <key>LowPriorityIO</key>
+    <true/>
+    <key>ProcessType</key>
+    <string>Background</string>
+    
+    <!-- Set root as the user (requires admin installation) -->
+    <key>UserName</key>
+    <string>root</string>
+    <key>GroupName</key>
+    <string>wheel</string>
+    
+    <!-- Umask for file creation -->
+    <key>Umask</key>
+    <integer>022</integer>
+    
+    <!-- Ensure root can write to the log directory -->
+    <key>SessionCreate</key>
+    <true/>
+</dict>
+</plist>
+

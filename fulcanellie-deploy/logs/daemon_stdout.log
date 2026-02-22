@@ -1,0 +1,540 @@
+[2025-05-19 22:59:41] ===== STARTING FULCANELLIE SERVICE =====
+[2025-05-19 22:59:41] Service started at: Mon May 19 22:59:41 PDT 2025
+[2025-05-19 22:59:41] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20250519.log
+[2025-05-19 22:59:42] Starting Fulcanellie character (run #1)
+[2025-05-19 22:59:42] ERROR: Could not find Fulcanellie executable or script. Please update this script with the correct command.
+[2025-05-19 22:59:42] ERROR: Fulcanellie character crashed with exit code 1 after 0 seconds
+[2025-05-19 22:59:42] This is crash #1 out of 1 total runs
+[2025-05-19 22:59:42] Program crashed too quickly, waiting 60 seconds before restart...
+[2025-05-19 23:00:42] Waiting 5 seconds before next run...
+[2025-05-19 23:00:48] Starting Fulcanellie character (run #2)
+[2025-05-19 23:00:48] ERROR: Could not find Fulcanellie executable or script. Please update this script with the correct command.
+[2025-05-19 23:00:48] ERROR: Fulcanellie character crashed with exit code 1 after 0 seconds
+[2025-05-19 23:00:48] This is crash #2 out of 2 total runs
+[2025-05-19 23:00:48] Program crashed too quickly, waiting 60 seconds before restart...
+[2025-05-19 23:00:54] ===== STARTING FULCANELLIE SERVICE =====
+[2025-05-19 23:00:54] Service started at: Mon May 19 23:00:54 PDT 2025
+[2025-05-19 23:00:55] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20250519.log
+[2025-05-19 23:00:55] Starting Fulcanellie character (run #1)
+[2025-05-19 23:00:55] Loading environment variables from .env file
+[2025-05-19 23:00:55] Running Node.js application via npm script
+[2025-05-19 23:02:30] ===== STARTING FULCANELLIE SERVICE =====
+[2025-05-19 23:02:31] Service started at: Mon May 19 23:02:31 PDT 2025
+[2025-05-19 23:02:31] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20250519.log
+[2025-05-19 23:02:32] Starting Fulcanellie character (run #1)
+[2025-05-19 23:02:33] Loading environment variables from .env file
+[2025-05-19 23:02:33] Running Node.js application via npm script
+[2025-05-31 18:05:41] ===== STARTING FULCANELLIE SERVICE =====
+[2025-06-05 13:36:11] Service started at: Thu Jun  5 13:36:11 PDT 2025
+[2025-06-05 13:36:11] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20250531.log
+[2025-06-05 13:36:11] ===== NEW DAY - ROTATING LOG FILE =====
+[2025-06-05 13:36:11] Service continuing at: Thu Jun  5 13:36:11 PDT 2025
+[2025-06-05 13:36:11] Total runs so far: 1, Crashes: 0
+[2025-06-05 13:36:11] Starting Fulcanellie character (run #1)
+[2025-06-05 13:36:12] Loading environment variables from .env file
+[2025-06-05 13:36:12] Running Node.js application via npm script
+[2025-06-16 13:52:00] ===== STARTING FULCANELLIE SERVICE =====
+[2025-06-16 13:52:00] Service started at: Mon Jun 16 13:52:00 PDT 2025
+[2025-06-16 13:52:01] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20250616.log
+[2025-06-16 13:52:01] Starting Fulcanellie character (run #1)
+[2025-06-16 13:52:01] Loading environment variables from .env file
+[2025-06-16 13:52:01] Running Node.js application via npm script
+[2025-08-02 22:29:13] ===== STARTING FULCANELLIE SERVICE =====
+[2025-08-02 22:29:13] Service started at: Sat Aug  2 22:29:13 PDT 2025
+[2025-08-02 22:29:13] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20250802.log
+[2025-08-02 22:29:13] Starting Fulcanellie character (run #1)
+[2025-08-02 22:29:13] Loading environment variables from .env file
+[2025-08-02 22:29:13] Running Node.js application via npm script
+[2025-08-22 13:23:59] ===== STARTING FULCANELLIE SERVICE =====
+[2025-08-22 13:23:59] Service started at: Fri Aug 22 13:23:59 PDT 2025
+[2025-08-22 13:23:59] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20250822.log
+[2025-08-22 13:23:59] Starting Fulcanellie character (run #1)
+[2025-08-22 13:24:00] Loading environment variables from .env file
+[2025-08-22 13:24:00] Running Node.js application via npm script
+[2025-08-22 13:45:38] Service stopping due to signal received.
+[2025-08-22 14:10:11] ===== STARTING FULCANELLIE SERVICE =====
+[2025-08-22 14:10:11] Service started at: Fri Aug 22 14:10:11 PDT 2025
+[2025-08-22 14:10:11] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20250822.log
+[2025-08-22 14:10:11] Starting Fulcanellie character (run #1)
+[2025-08-22 14:10:12] Loading environment variables from .env file
+[2025-08-22 14:10:12] Running Node.js application via npm script
+[2025-09-03 22:01:32] Service stopping due to signal received.
+[2025-09-08 23:48:51] ===== STARTING FULCANELLIE SERVICE =====
+[2025-09-08 23:48:51] Service started at: Mon Sep  8 23:48:51 MST 2025
+[2025-09-08 23:48:51] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20250908.log
+[2025-09-08 23:48:51] Starting Fulcanellie character (run #1)
+[2025-09-08 23:48:52] Loading environment variables from .env file
+[2025-09-08 23:48:52] Running Node.js application via npm script
+[2025-09-09 00:00:38] Service stopping due to signal received.
+[2025-09-09 23:14:13] ===== STARTING FULCANELLIE SERVICE =====
+[2025-09-09 23:14:13] Service started at: Tue Sep  9 23:14:13 PDT 2025
+[2025-09-09 23:14:13] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20250909.log
+[2025-09-09 23:14:13] Starting Fulcanellie character (run #1)
+[2025-09-09 23:14:13] Loading environment variables from .env file
+[2025-09-09 23:14:13] Running Node.js application via npm script
+[2025-09-15 22:16:15] Service stopping due to signal received.
+[2025-09-18 13:14:56] ===== STARTING FULCANELLIE SERVICE =====
+[2025-09-18 13:14:56] Service started at: Thu Sep 18 13:14:56 PDT 2025
+[2025-09-18 13:14:56] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20250918.log
+[2025-09-18 13:14:56] Starting Fulcanellie character (run #1)
+[2025-09-18 13:14:56] Loading environment variables from .env file
+[2025-09-18 13:14:56] Running Node.js application via npm script
+[2025-09-18 13:47:39] Service stopping due to signal received.
+[2025-09-22 16:28:43] ===== STARTING FULCANELLIE SERVICE =====
+[2025-09-22 16:28:43] Service started at: Mon Sep 22 16:28:43 PDT 2025
+[2025-09-22 16:28:43] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20250922.log
+[2025-09-22 16:28:43] Starting Fulcanellie character (run #1)
+[2025-09-22 16:28:43] Loading environment variables from .env file
+[2025-09-22 16:28:44] Running Node.js application via npm script
+[2025-09-22 16:45:09] Service stopping due to signal received.
+[2025-09-24 21:04:55] ===== STARTING FULCANELLIE SERVICE =====
+[2025-09-24 21:04:55] Service started at: Wed Sep 24 21:04:55 PDT 2025
+[2025-09-24 21:04:55] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20250924.log
+[2025-09-24 21:04:55] Starting Fulcanellie character (run #1)
+[2025-09-24 21:04:55] Loading environment variables from .env file
+[2025-09-24 21:04:56] Running Node.js application via npm script
+[2025-09-24 21:25:05] Service stopping due to signal received.
+[2025-10-02 12:07:38] ===== STARTING FULCANELLIE SERVICE =====
+[2025-10-02 12:07:38] Service started at: Thu Oct  2 12:07:38 PDT 2025
+[2025-10-02 12:07:38] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251002.log
+[2025-10-02 12:07:38] Starting Fulcanellie character (run #1)
+[2025-10-02 12:07:39] Loading environment variables from .env file
+[2025-10-02 12:07:39] Running Node.js application via npm script
+[2025-10-02 12:20:12] Service stopping due to signal received.
+[2025-10-02 21:48:00] ===== STARTING FULCANELLIE SERVICE =====
+[2025-10-02 21:48:00] Service started at: Thu Oct  2 21:48:00 PDT 2025
+[2025-10-02 21:48:00] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251002.log
+[2025-10-02 21:48:01] Starting Fulcanellie character (run #1)
+[2025-10-02 21:48:01] Loading environment variables from .env file
+[2025-10-02 21:48:02] Running Node.js application via npm script
+[2025-10-02 22:35:00] Service stopping due to signal received.
+[2025-10-02 23:05:53] ===== STARTING FULCANELLIE SERVICE =====
+[2025-10-02 23:05:53] Service started at: Thu Oct  2 23:05:53 PDT 2025
+[2025-10-02 23:05:53] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251002.log
+[2025-10-02 23:05:53] Starting Fulcanellie character (run #1)
+[2025-10-02 23:05:54] Loading environment variables from .env file
+[2025-10-02 23:05:54] Running Node.js application via npm script
+[2025-10-02 23:12:50] Service stopping due to signal received.
+[2025-10-08 18:49:30] ===== STARTING FULCANELLIE SERVICE =====
+[2025-10-08 18:49:30] Service started at: Wed Oct  8 18:49:30 PDT 2025
+[2025-10-08 18:49:09] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251008.log
+[2025-10-08 18:49:10] Starting Fulcanellie character (run #1)
+[2025-10-08 18:49:10] Loading environment variables from .env file
+[2025-10-08 18:49:10] Running Node.js application via npm script
+[2025-10-08 19:08:59] Service stopping due to signal received.
+[2025-10-10 22:45:52] ===== STARTING FULCANELLIE SERVICE =====
+[2025-10-10 22:45:52] Service started at: Fri Oct 10 22:45:52 PDT 2025
+[2025-10-10 22:45:52] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251010.log
+[2025-10-10 22:45:52] Starting Fulcanellie character (run #1)
+[2025-10-10 22:45:52] Loading environment variables from .env file
+[2025-10-10 22:45:53] Running Node.js application via npm script
+[2025-10-10 22:55:21] Service stopping due to signal received.
+[2025-10-10 23:05:55] ===== STARTING FULCANELLIE SERVICE =====
+[2025-10-10 23:05:55] Service started at: Fri Oct 10 23:05:55 PDT 2025
+[2025-10-10 23:05:55] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251010.log
+[2025-10-10 23:05:55] Starting Fulcanellie character (run #1)
+[2025-10-10 23:05:56] Loading environment variables from .env file
+[2025-10-10 23:05:56] Running Node.js application via npm script
+[2025-10-10 23:10:26] Service stopping due to signal received.
+[2025-10-10 23:16:56] ===== STARTING FULCANELLIE SERVICE =====
+[2025-10-10 23:16:56] Service started at: Fri Oct 10 23:16:56 PDT 2025
+[2025-10-10 23:16:56] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251010.log
+[2025-10-10 23:16:56] Starting Fulcanellie character (run #1)
+[2025-10-10 23:16:57] Loading environment variables from .env file
+[2025-10-10 23:16:57] Running Node.js application via npm script
+[2025-10-10 23:19:15] Service stopping due to signal received.
+[2025-10-13 19:05:36] ===== STARTING FULCANELLIE SERVICE =====
+[2025-10-13 19:05:36] Service started at: Mon Oct 13 19:05:36 PDT 2025
+[2025-10-13 19:05:36] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251013.log
+[2025-10-13 19:05:36] Starting Fulcanellie character (run #1)
+[2025-10-13 19:05:36] Loading environment variables from .env file
+[2025-10-13 19:05:36] Running Node.js application via npm script
+[2025-10-13 22:08:19] Service stopping due to signal received.
+[2025-10-14 12:45:00] ===== STARTING FULCANELLIE SERVICE =====
+[2025-10-14 12:45:01] Service started at: Tue Oct 14 12:45:01 PDT 2025
+[2025-10-14 12:45:01] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251014.log
+[2025-10-14 12:45:01] Starting Fulcanellie character (run #1)
+[2025-10-14 12:45:01] Loading environment variables from .env file
+[2025-10-14 12:45:01] Running Node.js application via npm script
+[2025-10-14 15:57:54] Service stopping due to signal received.
+[2025-10-17 15:57:37] ===== STARTING FULCANELLIE SERVICE =====
+[2025-10-17 15:57:37] Service started at: Fri Oct 17 15:57:37 PDT 2025
+[2025-10-17 15:57:37] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251017.log
+[2025-10-17 15:57:37] Starting Fulcanellie character (run #1)
+[2025-10-17 15:57:37] Loading environment variables from .env file
+[2025-10-17 15:57:37] Running Node.js application via npm script
+[2025-10-18 21:46:01] Service stopping due to signal received.
+[2025-10-20 20:22:57] ===== STARTING FULCANELLIE SERVICE =====
+[2025-10-20 20:22:58] Service started at: Mon Oct 20 20:22:58 PDT 2025
+[2025-10-20 20:22:58] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251020.log
+[2025-10-20 20:22:58] Starting Fulcanellie character (run #1)
+[2025-10-20 20:22:58] Loading environment variables from .env file
+[2025-10-20 20:22:58] Running Node.js application via npm script
+[2025-10-20 21:02:57] Service stopping due to signal received.
+[2025-10-21 17:33:08] ===== STARTING FULCANELLIE SERVICE =====
+[2025-10-21 17:33:08] Service started at: Tue Oct 21 17:33:08 PDT 2025
+[2025-10-21 17:33:08] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251021.log
+[2025-10-21 17:33:08] Starting Fulcanellie character (run #1)
+[2025-10-21 17:33:08] Loading environment variables from .env file
+[2025-10-21 17:33:08] Running Node.js application via npm script
+[2025-10-21 19:03:03] Service stopping due to signal received.
+[2025-10-28 19:29:12] ===== STARTING FULCANELLIE SERVICE =====
+[2025-10-28 19:29:12] Service started at: Tue Oct 28 19:29:12 PDT 2025
+[2025-10-28 19:29:12] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251028.log
+[2025-10-28 19:29:12] Starting Fulcanellie character (run #1)
+[2025-10-28 19:29:13] Loading environment variables from .env file
+[2025-10-28 19:28:54] Running Node.js application via npm script
+[2025-10-28 20:07:26] Service stopping due to signal received.
+[2025-10-28 20:48:41] ===== STARTING FULCANELLIE SERVICE =====
+[2025-10-28 20:48:41] Service started at: Tue Oct 28 20:48:41 PDT 2025
+[2025-10-28 20:48:41] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251028.log
+[2025-10-28 20:48:41] Starting Fulcanellie character (run #1)
+[2025-10-28 20:48:42] Loading environment variables from .env file
+[2025-10-28 20:48:42] Running Node.js application via npm script
+[2025-10-28 22:31:23] Service stopping due to signal received.
+[2025-10-29 18:00:49] ===== STARTING FULCANELLIE SERVICE =====
+[2025-10-29 18:00:49] Service started at: Wed Oct 29 18:00:49 PDT 2025
+[2025-10-29 18:00:49] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251029.log
+[2025-10-29 18:00:49] Starting Fulcanellie character (run #1)
+[2025-10-29 18:00:49] Loading environment variables from .env file
+[2025-10-29 18:00:49] Running Node.js application via npm script
+[2025-10-29 18:34:38] Service stopping due to signal received.
+[2025-10-30 15:17:13] ===== STARTING FULCANELLIE SERVICE =====
+[2025-10-30 15:17:13] Service started at: Thu Oct 30 15:17:13 PDT 2025
+[2025-10-30 15:17:13] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251030.log
+[2025-10-30 15:17:13] Starting Fulcanellie character (run #1)
+[2025-10-30 15:17:14] Loading environment variables from .env file
+[2025-10-30 15:17:14] Running Node.js application via npm script
+[2025-10-30 16:07:56] Service stopping due to signal received.
+[2025-10-30 16:24:26] ===== STARTING FULCANELLIE SERVICE =====
+[2025-10-30 16:24:27] Service started at: Thu Oct 30 16:24:27 PDT 2025
+[2025-10-30 16:24:27] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251030.log
+[2025-10-30 16:24:27] Starting Fulcanellie character (run #1)
+[2025-10-30 16:24:27] Loading environment variables from .env file
+[2025-10-30 16:24:27] Running Node.js application via npm script
+[2025-10-30 16:34:31] Service stopping due to signal received.
+[2025-10-30 16:27:44] ===== STARTING FULCANELLIE SERVICE =====
+[2025-10-30 16:27:44] Service started at: Thu Oct 30 16:27:44 PDT 2025
+[2025-10-30 16:27:44] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251030.log
+[2025-10-30 16:27:44] Starting Fulcanellie character (run #1)
+[2025-10-30 16:27:44] Loading environment variables from .env file
+[2025-10-30 16:27:44] Running Node.js application via npm script
+[2025-11-05 10:09:03] Service stopping due to signal received.
+[2025-11-06 13:01:37] ===== STARTING FULCANELLIE SERVICE =====
+[2025-11-06 13:01:37] Service started at: Thu Nov  6 13:01:37 PST 2025
+[2025-11-06 13:01:37] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251106.log
+[2025-11-06 13:01:37] Starting Fulcanellie character (run #1)
+[2025-11-06 13:01:37] Loading environment variables from .env file
+[2025-11-06 13:01:37] Running Node.js application via npm script
+[2025-11-06 13:23:27] Service stopping due to signal received.
+[2025-11-06 18:54:43] ===== STARTING FULCANELLIE SERVICE =====
+[2025-11-06 18:54:44] Service started at: Thu Nov  6 18:54:44 PST 2025
+[2025-11-06 18:54:44] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251106.log
+[2025-11-06 18:54:44] Starting Fulcanellie character (run #1)
+[2025-11-06 18:54:44] Loading environment variables from .env file
+[2025-11-06 18:54:44] Running Node.js application via npm script
+[2025-11-06 19:23:19] Service stopping due to signal received.
+[2025-11-06 20:37:45] ===== STARTING FULCANELLIE SERVICE =====
+[2025-11-06 20:37:45] Service started at: Thu Nov  6 20:37:45 PST 2025
+[2025-11-06 20:37:45] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251106.log
+[2025-11-06 20:37:45] Starting Fulcanellie character (run #1)
+[2025-11-06 20:37:45] Loading environment variables from .env file
+[2025-11-06 20:37:46] Running Node.js application via npm script
+[2025-11-06 22:14:21] Service stopping due to signal received.
+[2025-11-08 18:30:46] ===== STARTING FULCANELLIE SERVICE =====
+[2025-11-08 18:30:47] Service started at: Sat Nov  8 18:30:47 PST 2025
+[2025-11-08 18:30:47] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251108.log
+[2025-11-08 18:30:47] Starting Fulcanellie character (run #1)
+[2025-11-08 18:30:47] Loading environment variables from .env file
+[2025-11-08 18:30:48] Running Node.js application via npm script
+[2025-11-08 18:50:36] Service stopping due to signal received.
+[2025-11-08 18:51:42] ===== STARTING FULCANELLIE SERVICE =====
+[2025-11-08 18:51:42] Service started at: Sat Nov  8 18:51:42 PST 2025
+[2025-11-08 18:51:42] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251108.log
+[2025-11-08 18:51:42] Starting Fulcanellie character (run #1)
+[2025-11-08 18:51:42] Loading environment variables from .env file
+[2025-11-08 18:51:42] Running Node.js application via npm script
+[2025-11-08 18:55:08] Service stopping due to signal received.
+[2025-11-11 17:15:30] ===== STARTING FULCANELLIE SERVICE =====
+[2025-11-11 17:15:31] Service started at: Tue Nov 11 17:15:31 PST 2025
+[2025-11-11 17:15:31] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251111.log
+[2025-11-11 17:15:31] Starting Fulcanellie character (run #1)
+[2025-11-11 17:15:31] Loading environment variables from .env file
+[2025-11-11 17:15:31] Running Node.js application via npm script
+[2025-11-11 17:16:55] Service stopping due to signal received.
+[2025-11-11 21:33:32] ===== STARTING FULCANELLIE SERVICE =====
+[2025-11-11 21:33:33] Service started at: Tue Nov 11 21:33:33 PST 2025
+[2025-11-11 21:33:33] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251111.log
+[2025-11-11 21:33:33] Starting Fulcanellie character (run #1)
+[2025-11-11 21:33:33] Loading environment variables from .env file
+[2025-11-11 21:33:33] Running Node.js application via npm script
+[2025-11-11 21:39:02] Service stopping due to signal received.
+[2025-11-14 12:20:45] ===== STARTING FULCANELLIE SERVICE =====
+[2025-11-14 12:20:46] Service started at: Fri Nov 14 12:20:46 PST 2025
+[2025-11-14 12:20:46] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251114.log
+[2025-11-14 12:20:46] Starting Fulcanellie character (run #1)
+[2025-11-14 12:20:46] Loading environment variables from .env file
+[2025-11-14 12:20:45] Running Node.js application via npm script
+[2025-11-14 12:54:24] Service stopping due to signal received.
+[2025-11-16 20:14:31] ===== STARTING FULCANELLIE SERVICE =====
+[2025-11-16 20:14:31] Service started at: Sun Nov 16 20:14:31 PST 2025
+[2025-11-16 20:14:31] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251116.log
+[2025-11-16 20:14:31] Starting Fulcanellie character (run #1)
+[2025-11-16 20:14:31] Loading environment variables from .env file
+[2025-11-16 20:14:31] Running Node.js application via npm script
+[2025-11-16 20:30:30] Service stopping due to signal received.
+[2025-11-17 19:29:00] ===== STARTING FULCANELLIE SERVICE =====
+[2025-11-17 19:29:00] Service started at: Mon Nov 17 19:29:00 PST 2025
+[2025-11-17 19:29:00] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251117.log
+[2025-11-17 19:29:01] Starting Fulcanellie character (run #1)
+[2025-11-17 19:29:01] Loading environment variables from .env file
+[2025-11-17 19:29:01] Running Node.js application via npm script
+[2025-11-17 19:35:59] Service stopping due to signal received.
+[2025-11-30 19:37:05] ===== STARTING FULCANELLIE SERVICE =====
+[2025-11-30 19:37:05] Service started at: Sun Nov 30 19:37:05 PST 2025
+[2025-11-30 19:37:05] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251130.log
+[2025-11-30 19:37:05] Starting Fulcanellie character (run #1)
+[2025-11-30 19:37:05] Loading environment variables from .env file
+[2025-11-30 19:37:06] Running Node.js application via npm script
+[2025-11-30 20:39:48] ===== STARTING FULCANELLIE SERVICE =====
+[2025-11-30 20:39:48] Service started at: Sun Nov 30 20:39:48 PST 2025
+[2025-11-30 20:39:48] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251130.log
+[2025-11-30 20:39:48] Starting Fulcanellie character (run #1)
+[2025-11-30 20:39:48] Loading environment variables from .env file
+[2025-11-30 20:39:48] Running Node.js application via npm script
+[2025-11-30 20:43:05] ===== STARTING FULCANELLIE SERVICE =====
+[2025-11-30 20:43:05] Service started at: Sun Nov 30 20:43:05 PST 2025
+[2025-11-30 20:43:05] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251130.log
+[2025-11-30 20:43:06] Starting Fulcanellie character (run #1)
+[2025-11-30 20:43:06] Loading environment variables from .env file
+[2025-11-30 20:43:06] Running Node.js application via npm script
+[2025-11-30 20:49:24] ===== STARTING FULCANELLIE SERVICE =====
+[2025-11-30 20:49:24] Service started at: Sun Nov 30 20:49:24 PST 2025
+[2025-11-30 20:49:24] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251130.log
+[2025-11-30 20:49:24] Starting Fulcanellie character (run #1)
+[2025-11-30 20:49:24] Loading environment variables from .env file
+[2025-11-30 20:49:24] Running Node.js application via npm script
+[2025-11-30 20:54:35] Service stopping due to signal received.
+[2025-11-30 21:09:53] ===== STARTING FULCANELLIE SERVICE =====
+[2025-11-30 21:09:55] Service started at: Sun Nov 30 21:09:55 PST 2025
+[2025-11-30 21:09:55] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251130.log
+[2025-11-30 21:09:55] Starting Fulcanellie character (run #1)
+[2025-11-30 21:09:55] Loading environment variables from .env file
+[2025-11-30 21:09:55] Running Node.js application via npm script
+[2025-11-30 21:35:54] Service stopping due to signal received.
+[2025-12-01 08:48:02] ===== STARTING FULCANELLIE SERVICE =====
+[2025-12-01 08:48:02] Service started at: Mon Dec  1 08:48:02 PST 2025
+[2025-12-01 08:48:02] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251201.log
+[2025-12-01 08:48:02] Starting Fulcanellie character (run #1)
+[2025-12-01 08:48:02] Loading environment variables from .env file
+[2025-12-01 08:48:03] Running Node.js application via npm script
+[2025-12-01 09:15:09] Service stopping due to signal received.
+[2025-12-01 18:36:34] ===== STARTING FULCANELLIE SERVICE =====
+[2025-12-01 18:36:34] Service started at: Mon Dec  1 18:36:34 PST 2025
+[2025-12-01 18:36:34] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251201.log
+[2025-12-01 18:36:34] Starting Fulcanellie character (run #1)
+[2025-12-01 18:36:35] Loading environment variables from .env file
+[2025-12-01 18:36:35] Running Node.js application via npm script
+[2025-12-01 20:54:01] Service stopping due to signal received.
+[2025-12-02 09:34:28] ===== STARTING FULCANELLIE SERVICE =====
+[2025-12-02 09:34:28] Service started at: Tue Dec  2 09:34:28 PST 2025
+[2025-12-02 09:34:28] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251202.log
+[2025-12-02 09:34:28] Starting Fulcanellie character (run #1)
+[2025-12-02 09:34:29] Loading environment variables from .env file
+[2025-12-02 09:34:29] Running Node.js application via npm script
+[2025-12-02 10:06:47] Service stopping due to signal received.
+[2025-12-02 13:36:28] ===== STARTING FULCANELLIE SERVICE =====
+[2025-12-02 13:36:29] Service started at: Tue Dec  2 13:36:29 PST 2025
+[2025-12-02 13:36:29] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251202.log
+[2025-12-02 13:36:29] Starting Fulcanellie character (run #1)
+[2025-12-02 13:36:29] Loading environment variables from .env file
+[2025-12-02 13:36:29] Running Node.js application via npm script
+[2025-12-02 13:52:36] Service stopping due to signal received.
+[2025-12-02 13:53:42] ===== STARTING FULCANELLIE SERVICE =====
+[2025-12-02 13:53:43] Service started at: Tue Dec  2 13:53:43 PST 2025
+[2025-12-02 13:53:43] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251202.log
+[2025-12-02 13:53:43] Starting Fulcanellie character (run #1)
+[2025-12-02 13:53:43] Loading environment variables from .env file
+[2025-12-02 13:53:43] Running Node.js application via npm script
+[2025-12-02 14:20:32] Service stopping due to signal received.
+[2025-12-03 11:27:03] ===== STARTING FULCANELLIE SERVICE =====
+[2025-12-03 11:27:03] Service started at: Wed Dec  3 11:27:03 PST 2025
+[2025-12-03 11:27:03] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251203.log
+[2025-12-03 11:27:03] Starting Fulcanellie character (run #1)
+[2025-12-03 11:27:03] Loading environment variables from .env file
+[2025-12-03 11:27:03] Running Node.js application via npm script
+[2025-12-03 11:57:41] Service stopping due to signal received.
+[2025-12-03 21:16:00] ===== STARTING FULCANELLIE SERVICE =====
+[2025-12-03 21:16:00] Service started at: Wed Dec  3 21:16:00 PST 2025
+[2025-12-03 21:16:00] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251203.log
+[2025-12-03 21:16:00] Starting Fulcanellie character (run #1)
+[2025-12-03 21:16:01] Loading environment variables from .env file
+[2025-12-03 21:16:01] Running Node.js application via npm script
+[2025-12-03 21:33:41] Service stopping due to signal received.
+[2025-12-09 19:50:09] ===== STARTING FULCANELLIE SERVICE =====
+[2025-12-09 19:50:10] Service started at: Tue Dec  9 19:50:09 PST 2025
+[2025-12-09 19:50:10] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251209.log
+[2025-12-09 19:50:10] Starting Fulcanellie character (run #1)
+[2025-12-09 19:50:10] Loading environment variables from .env file
+[2025-12-09 19:50:10] Running Node.js application via npm script
+[2025-12-09 22:48:30] Service stopping due to signal received.
+[2025-12-10 20:55:23] ===== STARTING FULCANELLIE SERVICE =====
+[2025-12-10 20:55:23] Service started at: Wed Dec 10 20:55:23 PST 2025
+[2025-12-10 20:55:24] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251210.log
+[2025-12-10 20:55:24] Starting Fulcanellie character (run #1)
+[2025-12-10 20:55:25] Loading environment variables from .env file
+[2025-12-10 20:55:25] Running Node.js application via npm script
+[2025-12-10 23:34:52] Service stopping due to signal received.
+[2025-12-11 20:03:38] ===== STARTING FULCANELLIE SERVICE =====
+[2025-12-11 20:03:39] Service started at: Thu Dec 11 20:03:39 PST 2025
+[2025-12-11 20:03:39] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251211.log
+[2025-12-11 20:03:39] Starting Fulcanellie character (run #1)
+[2025-12-11 20:03:39] Loading environment variables from .env file
+[2025-12-11 20:03:40] Running Node.js application via npm script
+[2025-12-13 22:49:53] Service stopping due to signal received.
+[2025-12-14 16:11:58] ===== STARTING FULCANELLIE SERVICE =====
+[2025-12-14 16:11:59] Service started at: Sun Dec 14 16:11:59 PST 2025
+[2025-12-14 16:11:59] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251214.log
+[2025-12-14 16:11:59] Starting Fulcanellie character (run #1)
+[2025-12-14 16:11:59] Loading environment variables from .env file
+[2025-12-14 16:11:59] Running Node.js application via npm script
+[2025-12-15 23:00:43] Service stopping due to signal received.
+[2025-12-16 17:37:19] ===== STARTING FULCANELLIE SERVICE =====
+[2025-12-16 17:37:19] Service started at: Tue Dec 16 17:37:19 PST 2025
+[2025-12-16 17:37:19] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251216.log
+[2025-12-16 17:37:19] Starting Fulcanellie character (run #1)
+[2025-12-16 17:37:19] Loading environment variables from .env file
+[2025-12-16 17:37:20] Running Node.js application via npm script
+[2025-12-16 19:06:24] Service stopping due to signal received.
+[2025-12-17 12:48:31] ===== STARTING FULCANELLIE SERVICE =====
+[2025-12-17 12:48:31] Service started at: Wed Dec 17 12:48:31 PST 2025
+[2025-12-17 12:48:31] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251217.log
+[2025-12-17 12:48:32] Starting Fulcanellie character (run #1)
+[2025-12-17 12:48:32] Loading environment variables from .env file
+[2025-12-17 12:48:32] Running Node.js application via npm script
+[2025-12-17 13:24:03] Service stopping due to signal received.
+[2025-12-17 12:48:51] ===== STARTING FULCANELLIE SERVICE =====
+[2025-12-17 12:48:51] Service started at: Wed Dec 17 12:48:51 PST 2025
+[2025-12-17 12:48:52] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251217.log
+[2025-12-17 12:48:52] Starting Fulcanellie character (run #1)
+[2025-12-17 12:48:56] Loading environment variables from .env file
+[2025-12-17 12:48:56] Running Node.js application via npm script
+[2025-12-27 19:11:19] ERROR: Fulcanellie character crashed with exit code 143 after 886944 seconds
+[2025-12-27 19:11:20] This is crash #1 out of 1 total runs
+[2025-12-27 19:11:20] Waiting 5 seconds before next run...
+[2025-12-27 19:11:26] ===== NEW DAY - ROTATING LOG FILE =====
+[2025-12-27 19:11:26] Service continuing at: Sat Dec 27 19:11:26 PST 2025
+[2025-12-27 19:11:27] Total runs so far: 2, Crashes: 1
+[2025-12-27 19:11:27] Starting Fulcanellie character (run #2)
+[2025-12-27 19:11:27] Loading environment variables from .env file
+[2025-12-27 19:11:27] Running Node.js application via npm script
+[2025-12-27 19:20:01] ===== STARTING FULCANELLIE SERVICE =====
+[2025-12-27 19:20:01] Service started at: Sat Dec 27 19:20:01 PST 2025
+[2025-12-27 19:20:01] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251227.log
+[2025-12-27 19:20:01] Starting Fulcanellie character (run #1)
+[2025-12-27 19:20:02] Loading environment variables from .env file
+[2025-12-27 19:20:02] Running Node.js application via npm script
+[2025-12-27 20:23:17] Service stopping due to signal received.
+[2025-12-28 20:49:05] ===== STARTING FULCANELLIE SERVICE =====
+[2025-12-28 20:49:05] Service started at: Sun Dec 28 20:49:05 PST 2025
+[2025-12-28 20:49:05] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20251228.log
+[2025-12-28 20:49:06] Starting Fulcanellie character (run #1)
+[2025-12-28 20:49:06] Loading environment variables from .env file
+[2025-12-28 20:49:06] Running Node.js application via npm script
+[2025-12-28 20:53:48] Service stopping due to signal received.
+[2026-01-02 18:39:05] ===== STARTING FULCANELLIE SERVICE =====
+[2026-01-02 18:39:05] Service started at: Fri Jan  2 18:39:05 PST 2026
+[2026-01-02 18:39:05] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20260102.log
+[2026-01-02 18:39:05] Starting Fulcanellie character (run #1)
+[2026-01-02 18:39:06] Loading environment variables from .env file
+[2026-01-02 18:39:06] Running Node.js application via npm script
+[2026-01-04 22:45:30] Service stopping due to signal received.
+[2026-01-05 19:59:55] ===== STARTING FULCANELLIE SERVICE =====
+[2026-01-05 19:59:56] Service started at: Mon Jan  5 19:59:56 PST 2026
+[2026-01-05 19:59:56] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20260105.log
+[2026-01-05 19:59:56] Starting Fulcanellie character (run #1)
+[2026-01-05 19:59:56] Loading environment variables from .env file
+[2026-01-05 19:59:56] Running Node.js application via npm script
+[2026-01-05 22:03:08] Service stopping due to signal received.
+[2026-01-06 20:42:38] ===== STARTING FULCANELLIE SERVICE =====
+[2026-01-06 20:42:38] Service started at: Tue Jan  6 20:42:38 PST 2026
+[2026-01-06 20:42:38] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20260106.log
+[2026-01-06 20:42:38] Starting Fulcanellie character (run #1)
+[2026-01-06 20:42:38] Loading environment variables from .env file
+[2026-01-06 20:42:38] Running Node.js application via npm script
+[2026-01-06 21:05:10] Service stopping due to signal received.
+[2026-01-08 16:29:11] ===== STARTING FULCANELLIE SERVICE =====
+[2026-01-08 16:29:11] Service started at: Thu Jan  8 16:29:11 PST 2026
+[2026-01-08 16:29:11] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20260108.log
+[2026-01-08 16:29:11] Starting Fulcanellie character (run #1)
+[2026-01-08 16:29:12] Loading environment variables from .env file
+[2026-01-08 16:29:12] Running Node.js application via npm script
+[2026-01-13 08:50:38] Service stopping due to signal received.
+[2026-01-20 10:58:06] ===== STARTING FULCANELLIE SERVICE =====
+[2026-01-20 10:58:07] Service started at: Tue Jan 20 10:58:07 PST 2026
+[2026-01-20 10:58:07] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20260120.log
+[2026-01-20 10:58:07] Starting Fulcanellie character (run #1)
+[2026-01-20 10:58:07] Loading environment variables from .env file
+[2026-01-20 10:58:07] Running Node.js application via npm script
+[2026-01-20 18:48:37] Service stopping due to signal received.
+[2026-01-21 21:17:04] ===== STARTING FULCANELLIE SERVICE =====
+[2026-01-21 21:17:04] Service started at: Wed Jan 21 21:17:04 PST 2026
+[2026-01-21 21:17:04] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20260121.log
+[2026-01-21 21:17:04] Starting Fulcanellie character (run #1)
+[2026-01-21 21:17:04] Loading environment variables from .env file
+[2026-01-21 21:17:04] Running Node.js application via npm script
+[2026-01-21 21:27:27] Service stopping due to signal received.
+[2026-01-26 20:03:42] ===== STARTING FULCANELLIE SERVICE =====
+[2026-01-26 20:03:42] Service started at: Mon Jan 26 20:03:42 PST 2026
+[2026-01-26 20:03:42] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20260126.log
+[2026-01-26 20:03:43] Starting Fulcanellie character (run #1)
+[2026-01-26 20:03:43] Loading environment variables from .env file
+[2026-01-26 20:03:43] Running Node.js application via npm script
+[2026-01-26 22:24:44] Service stopping due to signal received.
+[2026-02-01 16:17:10] ===== STARTING FULCANELLIE SERVICE =====
+[2026-02-01 16:17:10] Service started at: Sun Feb  1 16:17:10 PST 2026
+[2026-02-01 16:17:10] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20260201.log
+[2026-02-01 16:17:10] Starting Fulcanellie character (run #1)
+[2026-02-01 16:17:10] Loading environment variables from .env file
+[2026-02-01 16:17:10] Running Node.js application via npm script
+[2026-02-01 17:35:28] ===== STARTING FULCANELLIE SERVICE =====
+[2026-02-01 17:35:28] Service started at: Sun Feb  1 17:35:28 PST 2026
+[2026-02-01 17:35:28] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20260201.log
+[2026-02-01 17:35:28] Starting Fulcanellie character (run #1)
+[2026-02-01 17:35:28] Loading environment variables from .env file
+[2026-02-01 17:35:28] Running Node.js application via npm script
+[2026-02-01 18:06:50] Service stopping due to signal received.
+[2026-02-03 10:07:57] ===== STARTING FULCANELLIE SERVICE =====
+[2026-02-03 10:07:57] Service started at: Tue Feb  3 10:07:57 PST 2026
+[2026-02-03 10:07:57] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20260203.log
+[2026-02-03 10:07:57] Starting Fulcanellie character (run #1)
+[2026-02-03 10:07:57] Loading environment variables from .env file
+[2026-02-03 10:07:57] Running Node.js application via npm script
+[2026-02-04 22:58:33] Service stopping due to signal received.
+[2026-02-04 22:58:20] ===== STARTING FULCANELLIE SERVICE =====
+[2026-02-04 22:58:20] Service started at: Wed Feb  4 22:58:20 PST 2026
+[2026-02-04 22:58:20] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20260204.log
+[2026-02-04 22:58:20] Starting Fulcanellie character (run #1)
+[2026-02-04 22:58:20] Loading environment variables from .env file
+[2026-02-04 22:58:20] Running Node.js application via npm script
+[2026-02-10 21:42:36] Service stopping due to signal received.
+[2026-02-11 20:10:04] ===== STARTING FULCANELLIE SERVICE =====
+[2026-02-11 20:10:04] Service started at: Wed Feb 11 20:10:04 PST 2026
+[2026-02-11 20:10:04] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20260211.log
+[2026-02-11 20:10:04] Starting Fulcanellie character (run #1)
+[2026-02-11 20:10:04] Loading environment variables from .env file
+[2026-02-11 20:10:04] Running Node.js application via npm script
+[2026-02-11 20:52:02] Service stopping due to signal received.
+[2026-02-16 18:04:27] ===== STARTING FULCANELLIE SERVICE =====
+[2026-02-16 18:04:27] Service started at: Mon Feb 16 18:04:27 PST 2026
+[2026-02-16 18:04:27] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20260216.log
+[2026-02-16 18:04:27] Starting Fulcanellie character (run #1)
+[2026-02-16 18:04:27] Loading environment variables from .env file
+[2026-02-16 18:04:27] Running Node.js application via npm script
+[2026-02-18 00:09:47] Service stopping due to signal received.
+[2026-02-18 18:45:56] ===== STARTING FULCANELLIE SERVICE =====
+[2026-02-18 18:45:56] Service started at: Wed Feb 18 18:45:56 PST 2026
+[2026-02-18 18:45:56] Logs will be saved to: /Users/hendrix/eliza-starter/fulcanellie/logs/fulcanellie_service_20260218.log
+[2026-02-18 18:45:56] Starting Fulcanellie character (run #1)
+[2026-02-18 18:45:56] Loading environment variables from .env file
+[2026-02-18 18:45:56] Running Node.js application via npm script

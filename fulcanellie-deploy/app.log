@@ -1,0 +1,461 @@
+
+> fulcanellie@1.0.0 start
+> node dist/index.js
+
+Twitter API Key: Present
+Twitter API Secret: Present
+Twitter Access Token: Present
+Twitter Access Token Secret: Present
+🌍 Starting Fulcanellie...
+A bridge between ancient wisdom and modern science, analyzing seismic events through the lens of leylines and prophecies
+
+Personality Traits: Mystical, Analytical, Prophetic, Scientific, Enigmatic
+
+Areas of Expertise: Seismic Analysis, Leyline Theory, Ancient Prophecies, Sacred Geometry, Earth Energy Grids
+🔌 Testing Twitter connection...
+✅ Twitter credentials loaded. Skipping test tweet to save quota.
+
+⏰ Check interval set to 300 seconds
+🔄 Starting main loop...
+
+🔍 Checking for new seismic events...
+🌍 Fetching earthquake data from USGS...
+Minimum magnitude threshold: 4
+📊 Total earthquakes in feed: 9601
+🔍 Found 7 earthquakes above magnitude 4 in North America
+Latest earthquake: {
+  magnitude: 4.3,
+  location: '9 km ESE of Ciudad General Terán, Mexico',
+  time: '2025-05-12T01:29:38.630Z'
+}
+📝 Processing 7 earthquakes...
+⏭️  Skipping minor earthquake (magnitude 4.3)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 5.4)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.22)
+⏭️  Skipping minor earthquake (magnitude 5.21)
+
+⏳ Waiting 300 seconds until next check...
+
+🔍 Checking for new seismic events...
+🌍 Fetching earthquake data from USGS...
+Minimum magnitude threshold: 4
+📊 Total earthquakes in feed: 9602
+🔍 Found 7 earthquakes above magnitude 4 in North America
+Latest earthquake: {
+  magnitude: 4.3,
+  location: '9 km ESE of Ciudad General Terán, Mexico',
+  time: '2025-05-12T01:29:38.630Z'
+}
+📝 Processing 7 earthquakes...
+⏭️  Skipping minor earthquake (magnitude 4.3)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 5.4)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.22)
+⏭️  Skipping minor earthquake (magnitude 5.21)
+
+⏳ Waiting 300 seconds until next check...
+
+🔍 Checking for new seismic events...
+🌍 Fetching earthquake data from USGS...
+Minimum magnitude threshold: 4
+📊 Total earthquakes in feed: 9603
+🔍 Found 7 earthquakes above magnitude 4 in North America
+Latest earthquake: {
+  magnitude: 4.3,
+  location: '9 km ESE of Ciudad General Terán, Mexico',
+  time: '2025-05-12T01:29:38.630Z'
+}
+📝 Processing 7 earthquakes...
+⏭️  Skipping minor earthquake (magnitude 4.3)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 5.4)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.22)
+⏭️  Skipping minor earthquake (magnitude 5.21)
+
+⏳ Waiting 300 seconds until next check...
+
+🔍 Checking for new seismic events...
+🌍 Fetching earthquake data from USGS...
+Minimum magnitude threshold: 4
+📊 Total earthquakes in feed: 9604
+🔍 Found 7 earthquakes above magnitude 4 in North America
+Latest earthquake: {
+  magnitude: 4.3,
+  location: '9 km ESE of Ciudad General Terán, Mexico',
+  time: '2025-05-12T01:29:38.630Z'
+}
+📝 Processing 7 earthquakes...
+⏭️  Skipping minor earthquake (magnitude 4.3)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 5.4)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.22)
+⏭️  Skipping minor earthquake (magnitude 5.21)
+
+⏳ Waiting 300 seconds until next check...
+
+🔍 Checking for new seismic events...
+🌍 Fetching earthquake data from USGS...
+Minimum magnitude threshold: 4
+📊 Total earthquakes in feed: 9603
+🔍 Found 7 earthquakes above magnitude 4 in North America
+Latest earthquake: {
+  magnitude: 4.3,
+  location: '9 km ESE of Ciudad General Terán, Mexico',
+  time: '2025-05-12T01:29:38.630Z'
+}
+📝 Processing 7 earthquakes...
+⏭️  Skipping minor earthquake (magnitude 4.3)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 5.4)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.22)
+⏭️  Skipping minor earthquake (magnitude 5.21)
+
+⏳ Waiting 300 seconds until next check...
+
+🔍 Checking for new seismic events...
+🌍 Fetching earthquake data from USGS...
+Minimum magnitude threshold: 4
+📊 Total earthquakes in feed: 9606
+🔍 Found 7 earthquakes above magnitude 4 in North America
+Latest earthquake: {
+  magnitude: 4.3,
+  location: '9 km ESE of Ciudad General Terán, Mexico',
+  time: '2025-05-12T01:29:38.630Z'
+}
+📝 Processing 7 earthquakes...
+⏭️  Skipping minor earthquake (magnitude 4.3)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 5.4)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.22)
+⏭️  Skipping minor earthquake (magnitude 5.21)
+
+⏳ Waiting 300 seconds until next check...
+
+🔍 Checking for new seismic events...
+🌍 Fetching earthquake data from USGS...
+Minimum magnitude threshold: 4
+📊 Total earthquakes in feed: 9607
+🔍 Found 7 earthquakes above magnitude 4 in North America
+Latest earthquake: {
+  magnitude: 4.3,
+  location: '9 km ESE of Ciudad General Terán, Mexico',
+  time: '2025-05-12T01:29:38.630Z'
+}
+📝 Processing 7 earthquakes...
+⏭️  Skipping minor earthquake (magnitude 4.3)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 5.4)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.22)
+⏭️  Skipping minor earthquake (magnitude 5.21)
+
+⏳ Waiting 300 seconds until next check...
+
+🔍 Checking for new seismic events...
+🌍 Fetching earthquake data from USGS...
+Minimum magnitude threshold: 4
+📊 Total earthquakes in feed: 9608
+🔍 Found 7 earthquakes above magnitude 4 in North America
+Latest earthquake: {
+  magnitude: 4.3,
+  location: '9 km ESE of Ciudad General Terán, Mexico',
+  time: '2025-05-12T01:29:38.630Z'
+}
+📝 Processing 7 earthquakes...
+⏭️  Skipping minor earthquake (magnitude 4.3)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 5.4)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.22)
+⏭️  Skipping minor earthquake (magnitude 5.21)
+
+⏳ Waiting 300 seconds until next check...
+
+🔍 Checking for new seismic events...
+🌍 Fetching earthquake data from USGS...
+Minimum magnitude threshold: 4
+📊 Total earthquakes in feed: 9595
+🔍 Found 7 earthquakes above magnitude 4 in North America
+Latest earthquake: {
+  magnitude: 4.3,
+  location: '9 km ESE of Ciudad General Terán, Mexico',
+  time: '2025-05-12T01:29:38.630Z'
+}
+📝 Processing 7 earthquakes...
+⏭️  Skipping minor earthquake (magnitude 4.3)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 5.4)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.22)
+⏭️  Skipping minor earthquake (magnitude 5.21)
+
+⏳ Waiting 300 seconds until next check...
+
+🔍 Checking for new seismic events...
+🌍 Fetching earthquake data from USGS...
+Minimum magnitude threshold: 4
+📊 Total earthquakes in feed: 9611
+🔍 Found 7 earthquakes above magnitude 4 in North America
+Latest earthquake: {
+  magnitude: 4.3,
+  location: '9 km ESE of Ciudad General Terán, Mexico',
+  time: '2025-05-12T01:29:38.630Z'
+}
+📝 Processing 7 earthquakes...
+⏭️  Skipping minor earthquake (magnitude 4.3)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 5.4)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.22)
+⏭️  Skipping minor earthquake (magnitude 5.21)
+
+⏳ Waiting 300 seconds until next check...
+
+🔍 Checking for new seismic events...
+🌍 Fetching earthquake data from USGS...
+Minimum magnitude threshold: 4
+📊 Total earthquakes in feed: 9612
+🔍 Found 7 earthquakes above magnitude 4 in North America
+Latest earthquake: {
+  magnitude: 4.3,
+  location: '9 km ESE of Ciudad General Terán, Mexico',
+  time: '2025-05-12T01:29:38.630Z'
+}
+📝 Processing 7 earthquakes...
+⏭️  Skipping minor earthquake (magnitude 4.3)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 5.4)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.22)
+⏭️  Skipping minor earthquake (magnitude 5.21)
+
+⏳ Waiting 300 seconds until next check...
+
+🔍 Checking for new seismic events...
+🌍 Fetching earthquake data from USGS...
+Minimum magnitude threshold: 4
+📊 Total earthquakes in feed: 9612
+🔍 Found 7 earthquakes above magnitude 4 in North America
+Latest earthquake: {
+  magnitude: 4.3,
+  location: '9 km ESE of Ciudad General Terán, Mexico',
+  time: '2025-05-12T01:29:38.630Z'
+}
+📝 Processing 7 earthquakes...
+⏭️  Skipping minor earthquake (magnitude 4.3)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 5.4)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.22)
+⏭️  Skipping minor earthquake (magnitude 5.21)
+
+⏳ Waiting 300 seconds until next check...
+
+🔍 Checking for new seismic events...
+🌍 Fetching earthquake data from USGS...
+Minimum magnitude threshold: 4
+📊 Total earthquakes in feed: 9612
+🔍 Found 7 earthquakes above magnitude 4 in North America
+Latest earthquake: {
+  magnitude: 4.3,
+  location: '9 km ESE of Ciudad General Terán, Mexico',
+  time: '2025-05-12T01:29:38.630Z'
+}
+📝 Processing 7 earthquakes...
+⏭️  Skipping minor earthquake (magnitude 4.3)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 5.4)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.22)
+⏭️  Skipping minor earthquake (magnitude 5.21)
+
+⏳ Waiting 300 seconds until next check...
+
+🔍 Checking for new seismic events...
+🌍 Fetching earthquake data from USGS...
+Minimum magnitude threshold: 4
+📊 Total earthquakes in feed: 9612
+🔍 Found 7 earthquakes above magnitude 4 in North America
+Latest earthquake: {
+  magnitude: 4.3,
+  location: '9 km ESE of Ciudad General Terán, Mexico',
+  time: '2025-05-12T01:29:38.630Z'
+}
+📝 Processing 7 earthquakes...
+⏭️  Skipping minor earthquake (magnitude 4.3)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 5.4)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.22)
+⏭️  Skipping minor earthquake (magnitude 5.21)
+
+⏳ Waiting 300 seconds until next check...
+
+🔍 Checking for new seismic events...
+🌍 Fetching earthquake data from USGS...
+Minimum magnitude threshold: 4
+📊 Total earthquakes in feed: 9610
+🔍 Found 7 earthquakes above magnitude 4 in North America
+Latest earthquake: {
+  magnitude: 4.3,
+  location: '9 km ESE of Ciudad General Terán, Mexico',
+  time: '2025-05-12T01:29:38.630Z'
+}
+📝 Processing 7 earthquakes...
+⏭️  Skipping minor earthquake (magnitude 4.3)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 5.4)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.22)
+⏭️  Skipping minor earthquake (magnitude 5.21)
+
+⏳ Waiting 300 seconds until next check...
+
+🔍 Checking for new seismic events...
+🌍 Fetching earthquake data from USGS...
+Minimum magnitude threshold: 4
+📊 Total earthquakes in feed: 9608
+🔍 Found 7 earthquakes above magnitude 4 in North America
+Latest earthquake: {
+  magnitude: 4.3,
+  location: '9 km ESE of Ciudad General Terán, Mexico',
+  time: '2025-05-12T01:29:38.630Z'
+}
+📝 Processing 7 earthquakes...
+⏭️  Skipping minor earthquake (magnitude 4.3)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 5.4)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.22)
+⏭️  Skipping minor earthquake (magnitude 5.21)
+
+⏳ Waiting 300 seconds until next check...
+
+🔍 Checking for new seismic events...
+🌍 Fetching earthquake data from USGS...
+Minimum magnitude threshold: 4
+📊 Total earthquakes in feed: 9608
+🔍 Found 7 earthquakes above magnitude 4 in North America
+Latest earthquake: {
+  magnitude: 4.3,
+  location: '9 km ESE of Ciudad General Terán, Mexico',
+  time: '2025-05-12T01:29:38.630Z'
+}
+📝 Processing 7 earthquakes...
+⏭️  Skipping minor earthquake (magnitude 4.3)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 5.4)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.22)
+⏭️  Skipping minor earthquake (magnitude 5.21)
+
+⏳ Waiting 300 seconds until next check...
+
+🔍 Checking for new seismic events...
+🌍 Fetching earthquake data from USGS...
+Minimum magnitude threshold: 4
+📊 Total earthquakes in feed: 9607
+🔍 Found 7 earthquakes above magnitude 4 in North America
+Latest earthquake: {
+  magnitude: 4.3,
+  location: '9 km ESE of Ciudad General Terán, Mexico',
+  time: '2025-05-12T01:29:38.630Z'
+}
+📝 Processing 7 earthquakes...
+⏭️  Skipping minor earthquake (magnitude 4.3)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 5.4)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.22)
+⏭️  Skipping minor earthquake (magnitude 5.21)
+
+⏳ Waiting 300 seconds until next check...
+
+🔍 Checking for new seismic events...
+🌍 Fetching earthquake data from USGS...
+Minimum magnitude threshold: 4
+📊 Total earthquakes in feed: 9605
+🔍 Found 7 earthquakes above magnitude 4 in North America
+Latest earthquake: {
+  magnitude: 4.3,
+  location: '9 km ESE of Ciudad General Terán, Mexico',
+  time: '2025-05-12T01:29:38.630Z'
+}
+📝 Processing 7 earthquakes...
+⏭️  Skipping minor earthquake (magnitude 4.3)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 5.4)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.22)
+⏭️  Skipping minor earthquake (magnitude 5.21)
+
+⏳ Waiting 300 seconds until next check...
+
+🔍 Checking for new seismic events...
+🌍 Fetching earthquake data from USGS...
+Minimum magnitude threshold: 4
+📊 Total earthquakes in feed: 9603
+🔍 Found 7 earthquakes above magnitude 4 in North America
+Latest earthquake: {
+  magnitude: 4.3,
+  location: '9 km ESE of Ciudad General Terán, Mexico',
+  time: '2025-05-12T01:29:38.630Z'
+}
+📝 Processing 7 earthquakes...
+⏭️  Skipping minor earthquake (magnitude 4.3)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 5.4)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.22)
+⏭️  Skipping minor earthquake (magnitude 5.21)
+
+⏳ Waiting 300 seconds until next check...
+
+🔍 Checking for new seismic events...
+🌍 Fetching earthquake data from USGS...
+Minimum magnitude threshold: 4
+📊 Total earthquakes in feed: 9602
+🔍 Found 7 earthquakes above magnitude 4 in North America
+Latest earthquake: {
+  magnitude: 4.3,
+  location: '9 km ESE of Ciudad General Terán, Mexico',
+  time: '2025-05-12T01:29:38.630Z'
+}
+📝 Processing 7 earthquakes...
+⏭️  Skipping minor earthquake (magnitude 4.3)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 5.4)
+⏭️  Skipping minor earthquake (magnitude 4.1)
+⏭️  Skipping minor earthquake (magnitude 4.22)
+⏭️  Skipping minor earthquake (magnitude 5.21)
+
+⏳ Waiting 300 seconds until next check...
+
