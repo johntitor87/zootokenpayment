@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/index.js",
+    "start": "node server.js",
     "dev": "ts-node src/index.ts",
     "tweet": "ts-node src/tweet.ts",
     "test-noaa": "ts-node src/test-noaa.ts",

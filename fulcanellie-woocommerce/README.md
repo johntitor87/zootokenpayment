@@ -1,34 +1,27 @@
-# Fulcanellie WooCommerce – ZOO Solana Payments
+# Fulcanellie Staking API (backend only)
 
-Solana token payments and staking gating for WooCommerce. This project includes:
+Node backend for ZOO WooCommerce: staking status, payment verification, stake/unstake. **No Rust in this repo** – build the staking program elsewhere and add the IDL here if you use stake/unstake.
 
-- **WordPress plugin**: `wordpress-plugin/zoo-solana-woocommerce/` – ZOO token payment gateway and wallet connect
-- **Staking API**: Node server that WooCommerce calls to verify ZOO payments and staking tiers
-- **Solana scripts**: Token creation, metadata, burning, staking, token gating (CLI and program integrations)
+## Folder layout
 
-## Structure
+- `package.json` / `package-lock.json`
+- `server.ts` – entry (run with `npm start`)
+- `routes/` – API route handlers
+- `utils/` – config + Solana helpers (`utils/solana/`)
 
-- `wordpress-plugin/zoo-solana-woocommerce/` – Install this in WordPress as a plugin
-- `src/api/` – Staking API (run with `npm run staking-api`)
-- `src/solana/` – Token and staking scripts (create token, burn, hard stake, etc.)
-- `staking-program/`, `burn-program/` – Anchor programs (if you build from source)
-- `staking-config.json` – Staking program IDs, mint, tiers (see `product-configs.example.json` for product mapping)
+## Run
 
-## Setup
+```bash
+npm install
+npm start
+```
 
-1. Install dependencies: `npm install`
-2. Add `wallet.json` and `staking-config.json` in project root (see docs)
-3. Run Staking API: `npm run staking-api` (default port 3001)
-4. Install the WordPress plugin from `wordpress-plugin/zoo-solana-woocommerce/`
+Config: set env vars (`STAKING_PROGRAM_ID`, `MINT_ADDRESS`, `ZOO_STORE_WALLET`, `SOLANA_NETWORK`) or add `staking-config.json` in the project root.
 
-## Docs in this repo
+For **stake / request-unstake / complete-unstake** endpoints you need the Anchor IDL: put `zoostaking.json` in `utils/solana/` (from `anchor build` in your staking program repo) or set `STAKING_IDL_PATH`.
 
-- **SOLANA_TOKEN_GUIDE.md** – Token creation and setup
-- **HARD_STAKING.md**, **DEPLOY-STAKING-API.md** – Staking and API deployment
-- **TOKEN_FEATURES.md**, **HARD_GATING_COMPLETE.md** – Gating and features
-- **CONTROLLED_BURNING.md** – Burn program
-- **DEPLOY-HOSTGATOR.md**, **UPLOAD-TO-GITHUB.md** – Hosting and deployment
+## Deploy (e.g. Render)
 
-## License
-
-MIT
+Build: `npm install`  
+Start: `npm start`  
+Root directory: this folder.

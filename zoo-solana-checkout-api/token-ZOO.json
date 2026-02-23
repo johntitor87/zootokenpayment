@@ -1,0 +1,8 @@
+{
+  "name": "Lions in the zoo",
+  "symbol": "ZOO",
+  "description": "Lions in the zoo token on Solana",
+  "decimals": 9,
+  "network": "mainnet-beta",
+  "mint": ""
+}
