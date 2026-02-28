@@ -27,6 +27,7 @@ class WC_Gateway_ZOO_Token extends WC_Payment_Gateway {
         $this->store_wallet = $this->get_option('zoo_store_wallet', '');
         $this->zoo_per_usd  = (float) $this->get_option('zoo_per_usd', 10);
         $this->mint_address  = $this->get_option('zoo_mint_address', 'FKkgeZxYLxoZ1WciErXKbeNTf5CB296zv51euCR7MZN3');
+        $this->checkout_api_url = $this->get_option('zoo_checkout_api_url', '');
 
         add_action('woocommerce_update_options_payment_gateways_' . $this->id, array($this, 'process_admin_options'));
         add_action('woocommerce_thankyou_' . $this->id, array($this, 'thankyou_zoo_payment'), 10, 1);
@@ -70,8 +71,14 @@ class WC_Gateway_ZOO_Token extends WC_Payment_Gateway {
             'zoo_mint_address' => array(
                 'title'       => __('ZOO mint address', 'zoo-solana-woocommerce'),
                 'type'        => 'text',
-                'description' => __('Solana mint address of the ZOO token.', 'zoo-solana-woocommerce'),
+                'description' => __('Solana mint address of the ZOO token. ZOO token: FKkgeZxYLxoZ1WciErXKbeNTf5CB296zv51euCR7MZN3 (mint authority: 6XPtpWPgFfoxRcLCwxTKXawrvzeYjviw4EYpSSLW42gc).', 'zoo-solana-woocommerce'),
                 'default'     => 'FKkgeZxYLxoZ1WciErXKbeNTf5CB296zv51euCR7MZN3',
+            ),
+            'zoo_checkout_api_url' => array(
+                'title'       => __('ZOO Checkout API URL', 'zoo-solana-woocommerce'),
+                'type'        => 'url',
+                'description' => __('Optional. Base URL for message-sign payment (e.g. https://zoo-solana-checkout-api-1.onrender.com). When set, a "Pay with Phantom (sign message)" button is shown on the order confirmation page.', 'zoo-solana-woocommerce'),
+                'default'     => '',
             ),
         );
     }
@@ -140,11 +147,33 @@ class WC_Gateway_ZOO_Token extends WC_Payment_Gateway {
             'apiUrl'       => rtrim(get_option('zoo_staking_api_url', 'http://localhost:3001'), '/'),
         ));
 
+        $checkout_api_url = $this->get_option('zoo_checkout_api_url', '');
+        if ($checkout_api_url) {
+            wp_enqueue_script(
+                'zoo-checkout-phantom',
+                ZOO_SOLANA_WC_PLUGIN_URL . 'assets/js/zoo-checkout-phantom.js',
+                array(),
+                ZOO_SOLANA_WC_VERSION,
+                true
+            );
+            wp_localize_script('zoo-checkout-phantom', 'zooCheckoutApi', array(
+                'orderId'          => (string) $order_id,
+                'amount'           => $zoo_amount,
+                'apiUrl'           => rtrim($checkout_api_url, '/'),
+                'orderReceivedUrl' => $order->get_checkout_order_received_url(),
+            ));
+        }
+
         ?>
         <div id="zoo-pay-box" class="zoo-pay-box">
             <h3><?php esc_html_e('Pay with ZOO Token', 'zoo-solana-woocommerce'); ?></h3>
             <p><?php echo esc_html(sprintf(__('Send %s ZOO to complete this order.', 'zoo-solana-woocommerce'), number_format($zoo_amount, 2))); ?></p>
-            <p><button type="button" class="button button-primary" id="zoo-pay-btn"><?php esc_html_e('Pay with Wallet', 'zoo-solana-woocommerce'); ?></button></p>
+            <p>
+                <button type="button" class="button button-primary" id="zoo-pay-btn"><?php esc_html_e('Pay with Wallet', 'zoo-solana-woocommerce'); ?></button>
+                <?php if ($checkout_api_url) : ?>
+                    <button type="button" class="button" id="zoo-pay-phantom-btn"><?php esc_html_e('Pay with Phantom (sign message)', 'zoo-solana-woocommerce'); ?></button>
+                <?php endif; ?>
+            </p>
             <p class="zoo-pay-error" id="zoo-pay-error" style="display:none;"></p>
             <p class="zoo-pay-success" id="zoo-pay-success" style="display:none;"><?php esc_html_e('Payment verified. Refreshing...', 'zoo-solana-woocommerce'); ?></p>
         </div>
@@ -158,6 +187,8 @@ class WC_Gateway_ZOO_Token extends WC_Payment_Gateway {
         $order_key = isset($_POST['order_key']) ? sanitize_text_field(wp_unslash($_POST['order_key'])) : '';
         $signature = isset($_POST['signature']) ? sanitize_text_field(wp_unslash($_POST['signature'])) : '';
         $wallet = isset($_POST['wallet']) ? sanitize_text_field(wp_unslash($_POST['wallet'])) : '';
+        $signed_message = isset($_POST['signed_message']) ? sanitize_text_field(wp_unslash($_POST['signed_message'])) : '';
+        $signed_message_pubkey = isset($_POST['signed_message_pubkey']) ? sanitize_text_field(wp_unslash($_POST['signed_message_pubkey'])) : '';
 
         if (!$order_id || !$order_key || !$signature || !$wallet) {
             wp_send_json_error(array('message' => __('Missing parameters.', 'zoo-solana-woocommerce')));
@@ -181,6 +212,8 @@ class WC_Gateway_ZOO_Token extends WC_Payment_Gateway {
                 'signature'     => $signature,
                 'payer_wallet'  => $wallet,
                 'amount_zoo'    => $amount_zoo,
+                'signed_message' => $signed_message ? $signed_message : null,
+                'signed_message_pubkey' => $signed_message_pubkey ? $signed_message_pubkey : null,
             )),
         ));
 

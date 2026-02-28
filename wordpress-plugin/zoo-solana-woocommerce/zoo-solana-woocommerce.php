@@ -5,7 +5,7 @@
  * Description: Solana staking gating for WooCommerce — wallet connection, stake checks, product gating, checkout validation, tiered discounts.
  * Version: 1.0.0
  * Author: ZOO
- * Author URI: https://example.com
+ * Author URI: https://lionsinthezoo.com
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: zoo-solana-woocommerce
@@ -286,6 +286,31 @@ function zoo_solana_wc_front_scripts() {
     );
 }
 
+// ZOO Solana Checkout: load Solana web3 + checkout script on WooCommerce checkout.
+add_action('wp_enqueue_scripts', 'zoo_solana_checkout_scripts', 20);
+function zoo_solana_checkout_scripts() {
+    if (is_admin()) {
+        return;
+    }
+    if (!function_exists('is_checkout') || !is_checkout()) {
+        return;
+    }
+    wp_enqueue_script(
+        'solana-phantom',
+        'https://cdn.jsdelivr.net/npm/@solana/web3.js@1.95.4/lib/index.iife.min.js',
+        array(),
+        '1.95.4',
+        true
+    );
+    wp_enqueue_script(
+        'zoo-checkout',
+        ZOO_SOLANA_WC_PLUGIN_URL . 'assets/js/zoo-checkout-phantom.js',
+        array('solana-phantom'),
+        ZOO_SOLANA_WC_VERSION,
+        true
+    );
+}
+
 /**
  * Render wallet connect UI for header (same DOM structure as shortcode so wallet.js works).
  * Use do_action('zoo_solana_wallet_header') in theme header, or it appears in nav menu via filter below.
@@ -378,4 +403,50 @@ function zoo_connect_wallet_shortcode() {
     </div>
     <?php
     return ob_get_clean();
+}
+
+// Shortcode: [zoo_pay_button order_id="1234" amount="10" text="Pay 10 ZOO Tokens"]
+add_shortcode('zoo_pay_button', 'zoo_pay_button_shortcode');
+function zoo_pay_button_shortcode($atts) {
+    $atts = shortcode_atts(array(
+        'order_id' => '',
+        'amount'   => '',
+        'text'     => '',
+    ), $atts, 'zoo_pay_button');
+
+    $order_id = absint($atts['order_id']);
+    $amount   = $atts['amount'] !== '' ? floatval($atts['amount']) : 0;
+    $text     = $atts['text'] !== '' ? $atts['text'] : sprintf(__('Pay %s ZOO Tokens', 'zoo-solana-woocommerce'), number_format($amount, 2));
+
+    if (!$order_id || $amount <= 0) {
+        return '<!-- zoo_pay_button: set order_id and amount -->';
+    }
+
+    $settings = get_option('woocommerce_zoo_token_settings', array());
+    $api_url  = isset($settings['zoo_checkout_api_url']) ? rtrim($settings['zoo_checkout_api_url'], '/') : '';
+    if (!$api_url) {
+        return '<!-- zoo_pay_button: set ZOO Checkout API URL in WooCommerce → Payments → ZOO Token -->';
+    }
+
+    wp_enqueue_script('solana-web3', 'https://unpkg.com/@solana/web3.js@1.95.4/lib/index.iife.min.js', array(), '1.95.4', true);
+    wp_enqueue_script(
+        'zoo-checkout-phantom',
+        ZOO_SOLANA_WC_PLUGIN_URL . 'assets/js/zoo-checkout-phantom.js',
+        array('solana-web3'),
+        ZOO_SOLANA_WC_VERSION,
+        true
+    );
+    wp_localize_script('zoo-checkout-phantom', 'zooCheckoutApi', array(
+        'orderId'          => (string) $order_id,
+        'amount'           => $amount,
+        'apiUrl'           => $api_url,
+        'orderReceivedUrl' => wc_get_endpoint_url('order-received', '', wc_get_checkout_url()),
+    ));
+
+    return sprintf(
+        '<button type="button" class="button zoo-pay-token-btn" onclick="payWithZooToken(%d, %s)">%s</button>',
+        $order_id,
+        esc_attr($amount),
+        esc_html($text)
+    );
 }

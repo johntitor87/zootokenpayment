@@ -5,12 +5,15 @@
 import { Router } from 'express';
 import { loadConfig } from '../utils/config';
 import { verifyZooPayment } from '../utils/solana/verifyZooPayment';
+import { verifyMessageSignature } from '../utils/solana/verifyMessageSignature';
 
 const router = Router();
 
+const ORDER_MESSAGE_PREFIX = 'Authorize transaction for order #';
+
 router.post('/verify-payment', async (req, res) => {
   try {
-    const { order_id, signature, payer_wallet, amount_zoo } = req.body;
+    const { order_id, signature, payer_wallet, amount_zoo, signed_message, signed_message_pubkey } = req.body;
 
     if (!signature || typeof signature !== 'string') {
       return res.status(400).json({ success: false, error: 'Missing or invalid signature' });
@@ -18,6 +21,21 @@ router.post('/verify-payment', async (req, res) => {
     const amountZooNum = typeof amount_zoo === 'number' ? amount_zoo : parseFloat(amount_zoo);
     if (!Number.isFinite(amountZooNum) || amountZooNum <= 0) {
       return res.status(400).json({ success: false, error: 'Missing or invalid amount_zoo' });
+    }
+
+    if (signed_message != null && signed_message_pubkey != null) {
+      const msg = ORDER_MESSAGE_PREFIX + String(order_id ?? '');
+      const sig = typeof signed_message === 'string' ? signed_message : '';
+      const pubkey = typeof signed_message_pubkey === 'string' ? signed_message_pubkey : '';
+      if (!sig || !pubkey) {
+        return res.status(400).json({ success: false, error: 'Invalid signed_message or signed_message_pubkey' });
+      }
+      if (!verifyMessageSignature(pubkey, msg, sig)) {
+        return res.status(400).json({ success: false, error: 'Message signature verification failed' });
+      }
+      if (payer_wallet && pubkey !== payer_wallet) {
+        return res.status(400).json({ success: false, error: 'Message signer does not match payer wallet' });
+      }
     }
 
     const config = loadConfig();

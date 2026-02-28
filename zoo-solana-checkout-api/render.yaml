@@ -1,0 +1,10 @@
+# Render.com: use this when deploying the *whole repo* (fulcanellie).
+# In Dashboard: set Root Directory to "zoo-solana-checkout-api" so this service runs.
+
+services:
+  - type: web
+    name: zoo-solana-checkout-api
+    runtime: node
+    rootDir: zoo-solana-checkout-api
+    buildCommand: npm install
+    startCommand: npm start

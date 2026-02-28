@@ -40,6 +40,40 @@
     return null;
   }
 
+  function connectProvider(provider) {
+    if (typeof provider.connect === 'function') {
+      return provider.connect();
+    }
+    if (typeof provider.request === 'function') {
+      return provider.request({ method: 'connect' });
+    }
+    return Promise.reject(new Error('Wallet does not support connect'));
+  }
+
+  function signOrderMessage(provider, orderId) {
+    var message = 'Authorize transaction for order #' + orderId;
+    var encodedMessage = new TextEncoder().encode(message);
+    if (typeof provider.signMessage === 'function') {
+      return provider.signMessage(encodedMessage, 'utf8');
+    }
+    if (typeof provider.request === 'function') {
+      return provider.request({
+        method: 'signMessage',
+        params: { message: encodedMessage, display: 'utf8' }
+      });
+    }
+    return Promise.resolve(null);
+  }
+
+  function signatureToBase64(sig) {
+    if (sig instanceof Uint8Array) {
+      var binary = '';
+      for (var i = 0; i < sig.length; i++) binary += String.fromCharCode(sig[i]);
+      return typeof btoa !== 'undefined' ? btoa(binary) : '';
+    }
+    return '';
+  }
+
   function getWalletFromPage() {
     if (typeof zoo_get_user_wallet === 'function') {
       return zoo_get_user_wallet();
@@ -102,7 +136,7 @@
     }
 
     function doSignAndSend() {
-      provider.request({ method: 'connect' }).then(function () {
+      connectProvider(provider).then(function () {
         var payer, payerStr, Solana, connection, mint, store, ataProgramId, tokenProgramId;
         var sourceAta, destAta, data, keys, ix, tx;
 
@@ -150,26 +184,36 @@
           return;
         }
 
-        connection.getLatestBlockhash().then(function (res) {
-          tx.recentBlockhash = res.blockhash;
-          tx.feePayer = payer;
-          if (typeof provider.signAndSendTransaction !== 'function') {
-            throw new Error('Wallet does not support signAndSendTransaction');
+        var signedMessageB64 = '';
+        var signedMessagePubkey = '';
+        signOrderMessage(provider, orderId).catch(function () { return null; }).then(function (signed) {
+          if (signed && signed.signature) {
+            signedMessageB64 = signatureToBase64(signed.signature);
+            if (!signedMessageB64 && typeof signed.signature === 'string') signedMessageB64 = signed.signature;
+            signedMessagePubkey = (signed.publicKey && typeof signed.publicKey.toString === 'function') ? signed.publicKey.toString() : (typeof signed.publicKey === 'string' ? signed.publicKey : '');
           }
-          return provider.signAndSendTransaction(tx);
-        }).then(function (sig) {
-          var signature = (typeof sig === 'string') ? sig : (sig && (sig.signature || sig.transactionSignature));
-          if (!signature) {
-            showError('No signature returned.');
-            return;
-          }
-          var form = new FormData();
-          form.append('action', 'zoo_verify_payment');
-          form.append('nonce', nonce);
-          form.append('order_id', orderId);
-          form.append('order_key', orderKey);
-          form.append('signature', signature);
-          form.append('wallet', payerStr);
+          return connection.getLatestBlockhash().then(function (res) {
+            tx.recentBlockhash = res.blockhash;
+            tx.feePayer = payer;
+            if (typeof provider.signAndSendTransaction !== 'function') {
+              throw new Error('Wallet does not support signAndSendTransaction');
+            }
+            return provider.signAndSendTransaction(tx);
+          }).then(function (sig) {
+            var signature = (typeof sig === 'string') ? sig : (sig && (sig.signature || sig.transactionSignature));
+            if (!signature) {
+              showError('No signature returned.');
+              return;
+            }
+            var form = new FormData();
+            form.append('action', 'zoo_verify_payment');
+            form.append('nonce', nonce);
+            form.append('order_id', orderId);
+            form.append('order_key', orderKey);
+            form.append('signature', signature);
+            form.append('wallet', payerStr);
+            if (signedMessageB64) form.append('signed_message', signedMessageB64);
+            if (signedMessagePubkey) form.append('signed_message_pubkey', signedMessagePubkey);
           var xhr = new XMLHttpRequest();
           xhr.open('POST', ajaxUrl);
           xhr.onload = function () {
